@@ -47,7 +47,8 @@ module.exports = function(grunt) {
       },
       bootstrapformhelpers: {
         src: [
-          'js/lang/en_US/*.js',
+//           'js/lang/en_US/*.js',
+          'js/lang/ja_JP/*.js',
           'js/*.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'

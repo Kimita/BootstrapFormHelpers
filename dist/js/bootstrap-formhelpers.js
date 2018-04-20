@@ -1,6 +1,6 @@
 /**
 * bootstrap-formhelpers.js v2.3.0 by @vincentlamanna
-* Copyright 2013 Vincent Lamanna
+* Copyright 2018 Vincent Lamanna
 * http://www.apache.org/licenses/LICENSE-2.0
 */
 if (!jQuery) { throw new Error("Bootstrap Form Helpers requires jQuery"); }
@@ -25,6 +25,7 @@ if (!jQuery) { throw new Error("Bootstrap Form Helpers requires jQuery"); }
  * ========================================================== */
  
 var BFHCountriesList = {
+/*
   'AF': 'Afghanistan',
   'AL': 'Albania',
   'DZ': 'Algeria',
@@ -34,10 +35,14 @@ var BFHCountriesList = {
   'AI': 'Anguilla',
   'AQ': 'Antarctica',
   'AG': 'Antigua and Barbuda',
-  'AR': 'Argentina',
+*/
+  'AR': 'アルゼンチン',
+/*
   'AM': 'Armenia',
   'AW': 'Aruba',
-  'AU': 'Australia',
+*/
+  'AU': 'オーストラリア',
+/*
   'AT': 'Austria',
   'AZ': 'Azerbaijan',
   'BH': 'Bahrain',
@@ -53,7 +58,9 @@ var BFHCountriesList = {
   'BA': 'Bosnia and Herzegovina',
   'BW': 'Botswana',
   'BV': 'Bouvet Island',
-  'BR': 'Brazil',
+*/
+  'BR': 'ブラジル',
+/*
   'IO': 'British Indian Ocean Territory',
   'VG': 'British Virgin Islands',
   'BN': 'Brunei',
@@ -63,13 +70,17 @@ var BFHCountriesList = {
   'CI': 'Côte d\'Ivoire',
   'KH': 'Cambodia',
   'CM': 'Cameroon',
-  'CA': 'Canada',
+*/
+  'CA': 'カナダ',
+/*
   'CV': 'Cape Verde',
   'KY': 'Cayman Islands',
   'CF': 'Central African Republic',
   'TD': 'Chad',
   'CL': 'Chile',
-  'CN': 'China',
+*/
+  'CN': '中国',
+/*
   'CX': 'Christmas Island',
   'CC': 'Cocos (Keeling) Islands',
   'CO': 'Colombia',
@@ -99,14 +110,18 @@ var BFHCountriesList = {
   'FJ': 'Fiji',
   'FI': 'Finland',
   'MK': 'Former Yugoslav Republic of Macedonia',
-  'FR': 'France',
+*/
+  'FR': 'フランス',
+/*
   'FX': 'France, Metropolitan',
   'GF': 'French Guiana',
   'PF': 'French Polynesia',
   'TF': 'French Southern Territories',
   'GA': 'Gabon',
   'GE': 'Georgia',
-  'DE': 'Germany',
+*/
+  'DE': 'ドイツ',
+/*
   'GH': 'Ghana',
   'GI': 'Gibraltar',
   'GR': 'Greece',
@@ -124,15 +139,19 @@ var BFHCountriesList = {
   'HK': 'Hong Kong',
   'HU': 'Hungary',
   'IS': 'Iceland',
-  'IN': 'India',
-  'ID': 'Indonesia',
+*/
+  'IN': 'インド',
+  'ID': 'インドネシア',
+/*
   'IR': 'Iran',
   'IQ': 'Iraq',
   'IE': 'Ireland',
   'IL': 'Israel',
-  'IT': 'Italy',
-  'JM': 'Jamaica',
-  'JP': 'Japan',
+*/
+  'IT': 'イタリア',
+//   'JM': 'Jamaica',
+  'JP': '日本',
+/*
   'JO': 'Jordan',
   'KZ': 'Kazakhstan',
   'KE': 'Kenya',
@@ -160,7 +179,9 @@ var BFHCountriesList = {
   'MR': 'Mauritania',
   'MU': 'Mauritius',
   'YT': 'Mayotte',
-  'MX': 'Mexico',
+*/
+  'MX': 'メキシコ',
+/*
   'FM': 'Micronesia',
   'MD': 'Moldova',
   'MC': 'Monaco',
@@ -201,7 +222,9 @@ var BFHCountriesList = {
   'QA': 'Qatar',
   'RE': 'Reunion',
   'RO': 'Romania',
-  'RU': 'Russia',
+*/
+  'RU': 'ロシア',
+/*
   'RW': 'Rwanda',
   'ST': 'São Tomé and Príncipe',
   'SH': 'Saint Helena',
@@ -211,7 +234,9 @@ var BFHCountriesList = {
   'VC': 'Saint Vincent and the Grenadines',
   'WS': 'Samoa',
   'SM': 'San Marino',
-  'SA': 'Saudi Arabia',
+*/
+  'SA': 'サウジアラビア',
+/*
   'SN': 'Senegal',
   'RS': 'Serbia',
   'SC': 'Seychelles',
@@ -221,9 +246,11 @@ var BFHCountriesList = {
   'SI': 'Slovenia',
   'SB': 'Solomon Islands',
   'SO': 'Somalia',
-  'ZA': 'South Africa',
-  'GS': 'South Georgia and the South Sandwich Islands',
-  'KR': 'South Korea',
+*/
+  'ZA': '南アフリカ',
+//  'GS': 'South Georgia and the South Sandwich Islands',
+  'KR': '韓国',
+/*
   'ES': 'Spain',
   'LK': 'Sri Lanka',
   'SD': 'Sudan',
@@ -244,7 +271,9 @@ var BFHCountriesList = {
   'TO': 'Tonga',
   'TT': 'Trinidad and Tobago',
   'TN': 'Tunisia',
-  'TR': 'Turkey',
+*/
+  'TR': 'トルコ',
+/*
   'TM': 'Turkmenistan',
   'TC': 'Turks and Caicos Islands',
   'TV': 'Tuvalu',
@@ -252,8 +281,10 @@ var BFHCountriesList = {
   'UG': 'Uganda',
   'UA': 'Ukraine',
   'AE': 'United Arab Emirates',
-  'GB': 'United Kingdom',
-  'US': 'United States',
+*/
+  'GB': 'イギリス',
+  'US': 'アメリカ',
+/*
   'UM': 'United States Minor Outlying Islands',
   'UY': 'Uruguay',
   'UZ': 'Uzbekistan',
@@ -266,6 +297,7 @@ var BFHCountriesList = {
   'YE': 'Yemen',
   'ZM': 'Zambia',
   'ZW': 'Zimbabwe'
+*/
 };
 
  /* ==========================================================
@@ -7814,7 +7846,7 @@ var BFHLanguagesList = {
   'mk': 'македонски јазик',
   'mn': 'монгол',
   'ce': 'нохчийн мотт',
-  'ru': 'русский язык',
+  'ru': 'Русский язык',
   'sr': 'српски језик',
   'tt': 'татар теле',
   'tg': 'тоҷикӣ',
@@ -7989,7 +8021,7 @@ var BFHPhoneFormatList = {
   'IQ': '+964 ddddddddd',
   'IE': '+353 ddddddddd',
   'IL': '+972 ddddddddd',
-  'IT': '+39 ddddddddd',
+  'IT': '+39 ddddddddddd',
   'JM': '+1 (ddd) ddd-dddd',
   'JP': '+81 ddddddddd',
   'JO': '+962 ddddddddd',
@@ -8058,7 +8090,7 @@ var BFHPhoneFormatList = {
   'QA': '+974 ddddddddd',
   'RE': '+262 ddddddddd',
   'RO': '+40 ddddddddd',
-  'RU': '+7 ddddddddd',
+  'RU': '+7 dddddddddd',
   'RW': '+250 ddddddddd',
   'ST': '+239 ddddddddd',
   'SH': '+290 ddddddddd',
@@ -10202,53 +10234,53 @@ var BFHStatesList = {
     '14' : {'code':'WML','name':'Westmoreland Parish'}
   },
   'JP':{
-    '1' : {'code':'AI','name':'Aichi'},
-    '2' : {'code':'AK','name':'Akita'},
-    '3' : {'code':'AO','name':'Aomori'},
-    '4' : {'code':'CH','name':'Chiba'},
-    '5' : {'code':'EH','name':'Ehime'},
-    '6' : {'code':'FK','name':'Fukui'},
-    '7' : {'code':'FU','name':'Fukuoka'},
-    '8' : {'code':'FS','name':'Fukushima'},
-    '9' : {'code':'GI','name':'Gifu'},
-    '10' : {'code':'GU','name':'Gumma'},
-    '11' : {'code':'HI','name':'Hiroshima'},
-    '12' : {'code':'HO','name':'Hokkaido'},
-    '13' : {'code':'HY','name':'Hyogo'},
-    '14' : {'code':'IB','name':'Ibaraki'},
-    '15' : {'code':'IS','name':'Ishikawa'},
-    '16' : {'code':'IW','name':'Iwate'},
-    '17' : {'code':'KA','name':'Kagawa'},
-    '18' : {'code':'KG','name':'Kagoshima'},
-    '19' : {'code':'KN','name':'Kanagawa'},
-    '20' : {'code':'KO','name':'Kochi'},
-    '21' : {'code':'KU','name':'Kumamoto'},
-    '22' : {'code':'KY','name':'Kyoto'},
-    '23' : {'code':'MI','name':'Mie'},
-    '24' : {'code':'MY','name':'Miyagi'},
-    '25' : {'code':'MZ','name':'Miyazaki'},
-    '26' : {'code':'NA','name':'Nagano'},
-    '27' : {'code':'NG','name':'Nagasaki'},
-    '28' : {'code':'NR','name':'Nara'},
-    '29' : {'code':'NI','name':'Niigata'},
-    '30' : {'code':'OI','name':'Oita'},
-    '31' : {'code':'OK','name':'Okayama'},
-    '32' : {'code':'ON','name':'Okinawa'},
-    '33' : {'code':'OS','name':'Osaka'},
-    '34' : {'code':'SA','name':'Saga'},
-    '35' : {'code':'SI','name':'Saitama'},
-    '36' : {'code':'SH','name':'Shiga'},
-    '37' : {'code':'SM','name':'Shimane'},
-    '38' : {'code':'SZ','name':'Shizuoka'},
-    '39' : {'code':'TO','name':'Tochigi'},
-    '40' : {'code':'TS','name':'Tokushima'},
-    '41' : {'code':'TK','name':'Tokyo'},
-    '42' : {'code':'TT','name':'Tottori'},
-    '43' : {'code':'TY','name':'Toyama'},
-    '44' : {'code':'WA','name':'Wakayama'},
-    '45' : {'code':'YA','name':'Yamagata'},
-    '46' : {'code':'YM','name':'Yamaguchi'},
-    '47' : {'code':'YN','name':'Yamanashi'}
+    '1' : {'code':'AI','name':'愛知'},
+    '2' : {'code':'AK','name':'秋田'},
+    '3' : {'code':'AO','name':'青森'},
+    '4' : {'code':'CH','name':'千葉'},
+    '5' : {'code':'EH','name':'愛媛'},
+    '6' : {'code':'FK','name':'福井'},
+    '7' : {'code':'FU','name':'福岡'},
+    '8' : {'code':'FS','name':'福島'},
+    '9' : {'code':'GI','name':'岐阜'},
+    '10' : {'code':'GU','name':'群馬'},
+    '11' : {'code':'HI','name':'広島'},
+    '12' : {'code':'HO','name':'北海道'},
+    '13' : {'code':'HY','name':'兵庫'},
+    '14' : {'code':'IB','name':'茨城'},
+    '15' : {'code':'IS','name':'石川'},
+    '16' : {'code':'IW','name':'岩手'},
+    '17' : {'code':'KA','name':'香川'},
+    '18' : {'code':'KG','name':'鹿児島'},
+    '19' : {'code':'KN','name':'神奈川'},
+    '20' : {'code':'KO','name':'高知'},
+    '21' : {'code':'KU','name':'熊本'},
+    '22' : {'code':'KY','name':'京都'},
+    '23' : {'code':'MI','name':'三重'},
+    '24' : {'code':'MY','name':'宮城'},
+    '25' : {'code':'MZ','name':'宮崎'},
+    '26' : {'code':'NA','name':'長野'},
+    '27' : {'code':'NG','name':'長崎'},
+    '28' : {'code':'NR','name':'奈良'},
+    '29' : {'code':'NI','name':'新潟'},
+    '30' : {'code':'OI','name':'大分'},
+    '31' : {'code':'OK','name':'岡山'},
+    '32' : {'code':'ON','name':'沖縄'},
+    '33' : {'code':'OS','name':'大阪'},
+    '34' : {'code':'SA','name':'佐賀'},
+    '35' : {'code':'SI','name':'埼玉'},
+    '36' : {'code':'SH','name':'滋賀'},
+    '37' : {'code':'SM','name':'島根'},
+    '38' : {'code':'SZ','name':'静岡'},
+    '39' : {'code':'TO','name':'栃木'},
+    '40' : {'code':'TS','name':'徳島'},
+    '41' : {'code':'TK','name':'東京'},
+    '42' : {'code':'TT','name':'鳥取'},
+    '43' : {'code':'TY','name':'富山'},
+    '44' : {'code':'WA','name':'和歌山'},
+    '45' : {'code':'YA','name':'山形'},
+    '46' : {'code':'YM','name':'山口'},
+    '47' : {'code':'YN','name':'山梨'}
   },
   'JO':{
     '1' : {'code':'AM','name':'\'Amman'},
@@ -10669,21 +10701,21 @@ var BFHStatesList = {
     '27' : {'code':'ZBA','name':'Zomba'}
   },
   'MY':{
-    '1' : {'code':'Johor','name':'Johor'},
-    '2' : {'code':'Kedah','name':'Kedah'},
-    '3' : {'code':'Kelantan','name':'Kelantan'},
-    '4' : {'code':'Labuan','name':'Labuan'},
-    '5' : {'code':'Melaka','name':'Melaka'},
-    '6' : {'code':'Negeri Sembilan','name':'Negeri Sembilan'},
-    '7' : {'code':'Pahang','name':'Pahang'},
-    '8' : {'code':'Perak','name':'Perak'},
-    '9' : {'code':'Perlis','name':'Perlis'},
-    '10' : {'code':'Pulau Pinang','name':'Pulau Pinang'},
-    '11' : {'code':'Sabah','name':'Sabah'},
-    '12' : {'code':'Sarawak','name':'Sarawak'},
-    '13' : {'code':'Selangor','name':'Selangor'},
-    '14' : {'code':'Terengganu','name':'Terengganu'},
-    '15' : {'code':'Kuala Lumpur','name':'Kuala Lumpur'}
+    '1' : {'code':'JHR','name':'Johor'},
+    '2' : {'code':'KDH','name':'Kedah'},
+    '3' : {'code':'KTN','name':'Kelantan'},
+    '4' : {'code':'LBN','name':'Labuan'},
+    '5' : {'code':'MLK','name':'Melaka'},
+    '6' : {'code':'NSN','name':'Negeri Sembilan'},
+    '7' : {'code':'PHG','name':'Pahang'},
+    '8' : {'code':'PRK','name':'Perak'},
+    '9' : {'code':'PLS','name':'Perlis'},
+    '10' : {'code':'PNG','name':'Pulau Pinang'},
+    '11' : {'code':'SBH','name':'Sabah'},
+    '12' : {'code':'SWK','name':'Sarawak'},
+    '13' : {'code':'SGR','name':'Selangor'},
+    '14' : {'code':'TRG','name':'Terengganu'},
+    '15' : {'code':'KUL','name':'Kuala Lumpur'}
   },
   'MV':{
     '1' : {'code':'AAD','name':'Ari Atoll Dheknu'},

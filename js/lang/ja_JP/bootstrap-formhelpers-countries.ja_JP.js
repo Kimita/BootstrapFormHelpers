@@ -18,6 +18,7 @@
  * ========================================================== */
  
 var BFHCountriesList = {
+/*
   'AF': 'Afghanistan',
   'AL': 'Albania',
   'DZ': 'Algeria',
@@ -27,10 +28,14 @@ var BFHCountriesList = {
   'AI': 'Anguilla',
   'AQ': 'Antarctica',
   'AG': 'Antigua and Barbuda',
-  'AR': 'Argentina',
+*/
+  'AR': 'アルゼンチン',
+/*
   'AM': 'Armenia',
   'AW': 'Aruba',
-  'AU': 'Australia',
+*/
+  'AU': 'オーストラリア',
+/*
   'AT': 'Austria',
   'AZ': 'Azerbaijan',
   'BH': 'Bahrain',
@@ -46,7 +51,9 @@ var BFHCountriesList = {
   'BA': 'Bosnia and Herzegovina',
   'BW': 'Botswana',
   'BV': 'Bouvet Island',
-  'BR': 'Brazil',
+*/
+  'BR': 'ブラジル',
+/*
   'IO': 'British Indian Ocean Territory',
   'VG': 'British Virgin Islands',
   'BN': 'Brunei',
@@ -56,13 +63,17 @@ var BFHCountriesList = {
   'CI': 'Côte d\'Ivoire',
   'KH': 'Cambodia',
   'CM': 'Cameroon',
-  'CA': 'Canada',
+*/
+  'CA': 'カナダ',
+/*
   'CV': 'Cape Verde',
   'KY': 'Cayman Islands',
   'CF': 'Central African Republic',
   'TD': 'Chad',
   'CL': 'Chile',
-  'CN': 'China',
+*/
+  'CN': '中国',
+/*
   'CX': 'Christmas Island',
   'CC': 'Cocos (Keeling) Islands',
   'CO': 'Colombia',
@@ -92,14 +103,18 @@ var BFHCountriesList = {
   'FJ': 'Fiji',
   'FI': 'Finland',
   'MK': 'Former Yugoslav Republic of Macedonia',
-  'FR': 'France',
+*/
+  'FR': 'フランス',
+/*
   'FX': 'France, Metropolitan',
   'GF': 'French Guiana',
   'PF': 'French Polynesia',
   'TF': 'French Southern Territories',
   'GA': 'Gabon',
   'GE': 'Georgia',
-  'DE': 'Germany',
+*/
+  'DE': 'ドイツ',
+/*
   'GH': 'Ghana',
   'GI': 'Gibraltar',
   'GR': 'Greece',
@@ -117,15 +132,19 @@ var BFHCountriesList = {
   'HK': 'Hong Kong',
   'HU': 'Hungary',
   'IS': 'Iceland',
-  'IN': 'India',
-  'ID': 'Indonesia',
+*/
+  'IN': 'インド',
+  'ID': 'インドネシア',
+/*
   'IR': 'Iran',
   'IQ': 'Iraq',
   'IE': 'Ireland',
   'IL': 'Israel',
-  'IT': 'Italy',
-  'JM': 'Jamaica',
-  'JP': 'Japan',
+*/
+  'IT': 'イタリア',
+//   'JM': 'Jamaica',
+  'JP': '日本',
+/*
   'JO': 'Jordan',
   'KZ': 'Kazakhstan',
   'KE': 'Kenya',
@@ -153,7 +172,9 @@ var BFHCountriesList = {
   'MR': 'Mauritania',
   'MU': 'Mauritius',
   'YT': 'Mayotte',
-  'MX': 'Mexico',
+*/
+  'MX': 'メキシコ',
+/*
   'FM': 'Micronesia',
   'MD': 'Moldova',
   'MC': 'Monaco',
@@ -194,7 +215,9 @@ var BFHCountriesList = {
   'QA': 'Qatar',
   'RE': 'Reunion',
   'RO': 'Romania',
-  'RU': 'Russia',
+*/
+  'RU': 'ロシア',
+/*
   'RW': 'Rwanda',
   'ST': 'São Tomé and Príncipe',
   'SH': 'Saint Helena',
@@ -204,7 +227,9 @@ var BFHCountriesList = {
   'VC': 'Saint Vincent and the Grenadines',
   'WS': 'Samoa',
   'SM': 'San Marino',
-  'SA': 'Saudi Arabia',
+*/
+  'SA': 'サウジアラビア',
+/*
   'SN': 'Senegal',
   'RS': 'Serbia',
   'SC': 'Seychelles',
@@ -214,9 +239,11 @@ var BFHCountriesList = {
   'SI': 'Slovenia',
   'SB': 'Solomon Islands',
   'SO': 'Somalia',
-  'ZA': 'South Africa',
-  'GS': 'South Georgia and the South Sandwich Islands',
-  'KR': 'South Korea',
+*/
+  'ZA': '南アフリカ',
+//  'GS': 'South Georgia and the South Sandwich Islands',
+  'KR': '韓国',
+/*
   'ES': 'Spain',
   'LK': 'Sri Lanka',
   'SD': 'Sudan',
@@ -237,7 +264,9 @@ var BFHCountriesList = {
   'TO': 'Tonga',
   'TT': 'Trinidad and Tobago',
   'TN': 'Tunisia',
-  'TR': 'Turkey',
+*/
+  'TR': 'トルコ',
+/*
   'TM': 'Turkmenistan',
   'TC': 'Turks and Caicos Islands',
   'TV': 'Tuvalu',
@@ -245,8 +274,10 @@ var BFHCountriesList = {
   'UG': 'Uganda',
   'UA': 'Ukraine',
   'AE': 'United Arab Emirates',
-  'GB': 'United Kingdom',
-  'US': 'United States',
+*/
+  'GB': 'イギリス',
+  'US': 'アメリカ',
+/*
   'UM': 'United States Minor Outlying Islands',
   'UY': 'Uruguay',
   'UZ': 'Uzbekistan',
@@ -259,4 +290,5 @@ var BFHCountriesList = {
   'YE': 'Yemen',
   'ZM': 'Zambia',
   'ZW': 'Zimbabwe'
+*/
 };
